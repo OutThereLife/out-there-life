@@ -4,7 +4,7 @@ import DirectoryContainer from 'js/components/employees/directory_container';
 import { mount } from 'enzyme';
 
 import Loader from 'js/components/elements/loader';
-import Directory from 'js/components/employees/directory';
+import SearchableDirectory from 'js/components/employees/searchable_directory';
 import EmployeesClient, { Employee } from 'js/clients/employees_client';
 
 describe('DirectoryContainer', function() {
@@ -22,7 +22,7 @@ describe('DirectoryContainer', function() {
 
     it('passes loading=true to the Loader', function() {
       expect(this.spec.component.find(Loader).prop('loading')).to.be.true;
-      expect(this.spec.component.find(Directory)).to.have.length(0);
+      expect(this.spec.component.find(SearchableDirectory)).to.have.length(0);
     });
   });
   context('when the API request is complete', function() {
