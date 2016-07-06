@@ -1,0 +1,24 @@
+{
+  "env": {
+    "mocha": true
+  },
+  "globals": {
+    "expect": false,
+    "sinon": false
+  },
+  "parser": "babel-eslint",
+  "extends": "airbnb",
+  "settings": {
+    "import/resolver": "webpack"
+  },
+  "rules": {
+    "comma-dangle": 0,
+    "jsx-quotes": ["error", "prefer-single"],
+    "no-underscore-dangle": 0,
+    "no-unused-expressions": 0,
+    "react/prefer-stateless-function": 0,
+    "func-names": 0,
+    "prefer-arrow-callback": 0,
+    "space-before-function-paren": 0,
+  }
+}
