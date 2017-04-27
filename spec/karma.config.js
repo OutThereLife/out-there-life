@@ -5,7 +5,10 @@ webpackConfig.progress = false;
 // https://github.com/webpack/webpack/issues/184
 // https://github.com/producthunt/chai-enzyme/issues/46
 webpackConfig.externals = {
-  'jsdom': 'window'
+  'jsdom': 'window',
+  'react/addons': true,
+  'react/lib/ExecutionEnvironment': true,
+  'react/lib/ReactContext': true
 };
 webpackConfig.resolve.extensions.push('.json');
 
